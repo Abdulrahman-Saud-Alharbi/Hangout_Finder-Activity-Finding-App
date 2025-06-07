@@ -52,8 +52,9 @@ Handles exceptions and prints details.
 
 
 
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/f695de38-0649-442d-b70e-2f612790757e" />
+
 This is the database structure. It contains three attributes: ID int(10) as a primary key, Name varchar(25), and Password varchar(10). The database will check if the entered data matches any existing data when the user logs in. Additionally, it will add new data or records if the user signs up.
-<img width="2371" alt="image" src="https://github.com/user-attachments/assets/1f3ddff3-bcaa-46d3-8d67-c55223eb03c0" />
 
 
 
