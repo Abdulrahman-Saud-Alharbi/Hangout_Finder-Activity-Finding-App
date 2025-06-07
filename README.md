@@ -5,24 +5,38 @@ The HangoutFinder is an app that lets friends pick a hangout spot in a fun and c
 How it works:
 
 Main Method:
-Entry point of the program.
-Establishes a connection with a server.
-Provides options for user login or signup.
-Retrieves user input for name, city, and filtering preferences.
-Fetches a list of hangout activities based on user preferences from the Google Maps API.
-Displays place names and addresses corresponding to the activities.
-Sends user data to the server.
+
+1) Entry point of the program.
+   
+3) Establishes a connection with a server.
+   
+5) Provides options for user login or signup.
+   
+7) Retrieves user input for name, city, and filtering preferences.
+   
+9) Fetches a list of hangout activities based on user preferences from the Google Maps API.
+    
+11) Displays place names and addresses corresponding to the activities.
+    
+13) Sends user data to the server.
+
 Database Method:
-Handles user authentication and registration using MySQL database.
-Performs login or signup based on user input.
+
+1) Handles user authentication and registration using MySQL database.
+2) Performs login or signup based on user input.
+
 HangoutActivitiesCategories Method:
-Initializes an array of HangoutActivities objects representing various hangout activities along with their details.
+
+1) Initializes an array of HangoutActivities objects representing various hangout activities along with their details.
 
 Filter Methods:
-noOfPeopleFilter and priceFilter methods filter activities based on the number of people and price range, respectively.
-ApplyFilters method manages the application of filters based on user preferences.
+
+1) noOfPeopleFilter and priceFilter methods filter activities based on the number of people and price range, respectively.
+   
+2) ApplyFilters method manages the application of filters based on user preferences.
+ 
 Choice Methods:
-chooseActivity, randomActivity, and CategoryCheck let user choose whether to pick the activity or let the app make a random choice.
+1) chooseActivity, randomActivity, and CategoryCheck let user choose whether to pick the activity or let the app make a random choice.
 
 Server: 
 
@@ -54,7 +68,7 @@ ClientHandler:
 5) Handles exceptions and prints details.
 
 
-
+Database Structure:
 <img width="456" alt="image" src="https://github.com/user-attachments/assets/f695de38-0649-442d-b70e-2f612790757e" />
 
 This is the database structure. It contains three attributes: ID int(10) as a primary key, Name varchar(25), and Password varchar(10). The database will check if the entered data matches any existing data when the user logs in. Additionally, it will add new data or records if the user signs up.
