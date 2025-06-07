@@ -25,30 +25,33 @@ Choice Methods:
 chooseActivity, randomActivity, and CategoryCheck let user choose whether to pick the activity or let the app make a random choice.
 
 Server: 
-Defines Server class with main method.
 
-Creates ServerSocket on port 1234 to listen for connections.
+1) Defines Server class with main method.
 
-Prints message to console when server starts.
+2) Creates ServerSocket on port 1234 to listen for connections.
 
- Accepts client connections in an infinite loop.
+3) Prints message to console when server starts.
+
+4) Accepts client connections in an infinite loop.
  
- Creates ClientHandler for each client connection.
+5) Creates ClientHandler for each client connection.
  
- Prints client's IP address to console.
+6) Prints client's IP address to console.
  
-Creates and starts new thread to run ClientHandler.
+7) Creates and starts new thread to run ClientHandler.
 
-2. ClientHandler:
-Defines ClientHandler class implementing Runnable.
 
-Reads User object from client using ObjectInputStream.
+ClientHandler:
 
-Saves user data in users.txt using PrintWriter.
+1) Defines ClientHandler class implementing Runnable.
 
-Prints confirmation message to console.
+2) Reads User object from client using ObjectInputStream.
 
-Handles exceptions and prints details.
+3) Saves user data in users.txt using PrintWriter.
+
+4) Prints confirmation message to console.
+
+5) Handles exceptions and prints details.
 
 
 
